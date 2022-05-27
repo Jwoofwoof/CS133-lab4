@@ -1,0 +1,63 @@
+===============================================================================
+Version:    v++ v2021.1 (64-bit)
+Build:      SW Build 3246112 on 2021-06-09-14:19:56
+Copyright:  Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+Created:    Fri May 27 19:41:27 2022
+===============================================================================
+
+-------------------------------------------------------------------------------
+Design Name:             cnn.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_3
+Target Device:           xilinx:aws-vu9p-f1:shell-v04261818:201920.3
+Target Clock:            250.000000MHz
+Total number of kernels: 1
+-------------------------------------------------------------------------------
+
+Kernel Summary
+Kernel Name  Type  Target              OpenCL Library                                      Compute Units
+-----------  ----  ------------------  --------------------------------------------------  -------------
+CnnKernel    c     fpga0:OCL_REGION_0  cnn.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_3  1
+
+
+-------------------------------------------------------------------------------
+OpenCL Binary:     cnn.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_3
+Kernels mapped to: clc_region
+
+Timing Information (MHz)
+Compute Unit  Kernel Name  Module Name                                                       Target Frequency  Estimated Frequency
+------------  -----------  ----------------------------------------------------------------  ----------------  -------------------
+CnnKernel_1   CnnKernel    CnnKernel_YourCode_Pipeline_VITIS_LOOP_125_1                      250               390.625
+CnnKernel_1   CnnKernel    CnnKernel_YourCode_Pipeline_VITIS_LOOP_183_3                      250               414.421875
+CnnKernel_1   CnnKernel    CnnKernel_YourCode_Pipeline_set_bias_VITIS_LOOP_52_1              250               499.750153
+CnnKernel_1   CnnKernel    CnnKernel_YourCode_Pipeline_conv_VITIS_LOOP_59_2_VITIS_LOOP_60_3  250               347.222198
+CnnKernel_1   CnnKernel    CnnKernel_YourCode_Pipeline_relu_VITIS_LOOP_76_6                  250               400.641022
+CnnKernel_1   CnnKernel    CnnKernel_YourCode_Pipeline_maxpool_VITIS_LOOP_84_7               250               345.901062
+CnnKernel_1   CnnKernel    CnnKernel_YourCode_Pipeline_VITIS_LOOP_220_3                      250               361.925446
+CnnKernel_1   CnnKernel    CnnKernel_YourCode                                                250               342.465759
+CnnKernel_1   CnnKernel    CnnKernel                                                         250               342.465759
+
+Latency Information
+Compute Unit  Kernel Name  Module Name                                                       Start Interval           Best (cycles)  Avg (cycles)  Worst (cycles)  Best (absolute)  Avg (absolute)  Worst (absolute)
+------------  -----------  ----------------------------------------------------------------  -----------------------  -------------  ------------  --------------  ---------------  --------------  ----------------
+CnnKernel_1   CnnKernel    CnnKernel_YourCode_Pipeline_VITIS_LOOP_125_1                      89                       89             89            89              0.356 us         0.356 us        0.356 us
+CnnKernel_1   CnnKernel    CnnKernel_YourCode_Pipeline_VITIS_LOOP_183_3                      136                      136            136           136             0.544 us         0.544 us        0.544 us
+CnnKernel_1   CnnKernel    CnnKernel_YourCode_Pipeline_set_bias_VITIS_LOOP_52_1              12546                    12546          12546         12546           50.184 us        50.184 us       50.184 us
+CnnKernel_1   CnnKernel    CnnKernel_YourCode_Pipeline_conv_VITIS_LOOP_59_2_VITIS_LOOP_60_3  3211304                  3211304        3211304       3211304         12.845 ms        12.845 ms       12.845 ms
+CnnKernel_1   CnnKernel    CnnKernel_YourCode_Pipeline_relu_VITIS_LOOP_76_6                  12547                    12547          12547         12547           50.188 us        50.188 us       50.188 us
+CnnKernel_1   CnnKernel    CnnKernel_YourCode_Pipeline_maxpool_VITIS_LOOP_84_7               6276                     6276           6276          6276            25.104 us        25.104 us       25.104 us
+CnnKernel_1   CnnKernel    CnnKernel_YourCode_Pipeline_VITIS_LOOP_220_3                      103                      103            103           103             0.412 us         0.412 us        0.412 us
+CnnKernel_1   CnnKernel    CnnKernel_YourCode                                                3338516583 ~ 3379972199  3338516583     3359303783    3379972199      13.354 sec       13.437 sec      13.520 sec
+CnnKernel_1   CnnKernel    CnnKernel                                                         3338516586 ~ 3379972202  3338516585     3359303785    3379972201      13.354 sec       13.437 sec      13.520 sec
+
+Area Information
+Compute Unit  Kernel Name  Module Name                                                       FF     LUT    DSP  BRAM  URAM
+------------  -----------  ----------------------------------------------------------------  -----  -----  ---  ----  ----
+CnnKernel_1   CnnKernel    CnnKernel_YourCode_Pipeline_VITIS_LOOP_125_1                      2343   3944   0    0     0
+CnnKernel_1   CnnKernel    CnnKernel_YourCode_Pipeline_VITIS_LOOP_183_3                      4951   6006   0    0     0
+CnnKernel_1   CnnKernel    CnnKernel_YourCode_Pipeline_set_bias_VITIS_LOOP_52_1              45     191    0    0     0
+CnnKernel_1   CnnKernel    CnnKernel_YourCode_Pipeline_conv_VITIS_LOOP_59_2_VITIS_LOOP_60_3  8270   13544  0    0     0
+CnnKernel_1   CnnKernel    CnnKernel_YourCode_Pipeline_relu_VITIS_LOOP_76_6                  61     191    0    0     0
+CnnKernel_1   CnnKernel    CnnKernel_YourCode_Pipeline_maxpool_VITIS_LOOP_84_7               133    477    0    0     0
+CnnKernel_1   CnnKernel    CnnKernel_YourCode_Pipeline_VITIS_LOOP_220_3                      3100   11598  0    0     0
+CnnKernel_1   CnnKernel    CnnKernel_YourCode                                                22523  41882  0    220   0
+CnnKernel_1   CnnKernel    CnnKernel                                                         24454  44095  0    250   0
+-------------------------------------------------------------------------------

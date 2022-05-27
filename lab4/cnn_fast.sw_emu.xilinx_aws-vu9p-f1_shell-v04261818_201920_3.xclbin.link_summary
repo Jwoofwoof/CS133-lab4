@@ -1,0 +1,568 @@
+<ENTRY>
+{
+ "thisFile": "/home/centos/CS133-lab4/lab4/cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xclbin.link_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Fri May 27 19:38:47 2022",
+ "timestampMillis": "1653680327836",
+ "buildStep": {
+  "cmdId": "de4c1dc0-308d-4e74-b952-261dbf0ce816",
+  "name": "v++",
+  "logFile": "/home/centos/CS133-lab4/lab4/_x/link/link.steps.log",
+  "commandLine": "/opt/Xilinx/Vitis/2021.1/bin/unwrapped/lnx64.o/v++ --xp param:compiler.lockFlowCritSlackThreshold=0 --xp vivado_param:hd.routingContainmentAreaExpansion=true --xp vivado_param:hd.supportClockNetCrossDiffReconfigurablePartitions=1 --xp vivado_param:bitstream.enablePR=4123 --xp vivado_param:physynth.ultraRAMOptOutput=false --xp vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MAX_URAM_CASCADE_HEIGHT}={1} --xp vivado_param:synth.elaboration.rodinMoreOptions={rt::set_parameter disableOregPackingUram true}  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -t sw_emu --platform /home/centos/src/project_data/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_3/xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xpfm --save-temps -l --connectivity.nk CnnKernel:1 -ocnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xclbin cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xo ",
+  "args": [
+   "--xp",
+   "param:compiler.lockFlowCritSlackThreshold=0",
+   "--xp",
+   "vivado_param:hd.routingContainmentAreaExpansion=true",
+   "--xp",
+   "vivado_param:hd.supportClockNetCrossDiffReconfigurablePartitions=1",
+   "--xp",
+   "vivado_param:bitstream.enablePR=4123",
+   "--xp",
+   "vivado_param:physynth.ultraRAMOptOutput=false",
+   "--xp",
+   "vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MAX_URAM_CASCADE_HEIGHT}={1}",
+   "--xp",
+   "vivado_param:synth.elaboration.rodinMoreOptions={rt::set_parameter disableOregPackingUram true}",
+   "-t",
+   "sw_emu",
+   "--platform",
+   "/home/centos/src/project_data/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_3/xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xpfm",
+   "--save-temps",
+   "-l",
+   "--connectivity.nk",
+   "CnnKernel:1",
+   "-ocnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xclbin",
+   "cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xo"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/CS133-lab4/lab4"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri May 27 19:38:47 2022",
+ "timestampMillis": "1653680327837",
+ "status": {
+  "cmdId": "de4c1dc0-308d-4e74-b952-261dbf0ce816",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Fri May 27 19:38:54 2022",
+ "timestampMillis": "1653680334216",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xpfm",
+  "hardwareDsa": "xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xsa",
+  "platformDirectory": "/home/centos/src/project_data/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_3",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_SW_EMU",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3",
+    "file": "/home/centos/CS133-lab4/lab4/cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xclbin",
+    "reports": [],
+    "uuid": ""
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "CnnKernel",
+     "file": "/home/centos/CS133-lab4/lab4/cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/centos/CS133-lab4/lab4/_x/link/int/xo/CnnKernel/CnnKernel/cpu_sources/cnn-krnl.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [
+     "CnnKernel_1"
+    ],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2021.1. SW Build 3246112 on 2021-06-09-14:19:56"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri May 27 19:38:54 2022",
+ "timestampMillis": "1653680334221",
+ "buildStep": {
+  "cmdId": "bd3fb151-1e65-4bbe-911c-2b9869a23def",
+  "name": "regiongen",
+  "logFile": "/home/centos/CS133-lab4/lab4/_x/link/int/cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3_regiongen.log",
+  "commandLine": "/opt/Xilinx/Vitis/2021.1/bin/../runtime/bin/regiongen_new -v -m /home/centos/CS133-lab4/lab4/_x/link/int/cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xml -t alg -o xcl_top",
+  "args": [
+   "-v",
+   "-m",
+   "/home/centos/CS133-lab4/lab4/_x/link/int/cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xml",
+   "-t",
+   "alg",
+   "-o",
+   "xcl_top"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/CS133-lab4/lab4"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri May 27 19:38:54 2022",
+ "timestampMillis": "1653680334221",
+ "status": {
+  "cmdId": "bd3fb151-1e65-4bbe-911c-2b9869a23def",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri May 27 19:38:55 2022",
+ "timestampMillis": "1653680335809",
+ "status": {
+  "cmdId": "bd3fb151-1e65-4bbe-911c-2b9869a23def",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri May 27 19:38:55 2022",
+ "timestampMillis": "1653680335810",
+ "buildStep": {
+  "cmdId": "d36f7681-f67f-435f-ac57-29f594fb0db7",
+  "name": "gcc",
+  "logFile": "/home/centos/CS133-lab4/lab4/_x/link/int/CnnKernel/CnnKernel_kernel_gcc.log",
+  "commandLine": "/opt/Xilinx/Vivado/2021.1/tps/lnx64/gcc-6.2.0/bin/gcc -I . -I /opt/Xilinx/Vitis_HLS/2021.1/bin/../include -I /opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/auto_cc/include -I /opt/Xilinx/Vitis_HLS/2021.1/bin/../common/technology/autopilot/opencl -I /opt/Xilinx/Vitis/2021.1/bin/../common/technology/autopilot/opencl -std=c++14 -D FASTSIM -I /home/centos/CS133-lab4/lab4 -fPIC -g -c -DHLS_STREAM_THREAD_SAFE -MD -MT obj/cnn-krnl.o -MP -MF obj/cnn-krnl.Cd /home/centos/CS133-lab4/lab4/_x/link/int/xo/CnnKernel/CnnKernel/cpu_sources/cnn-krnl.cpp -o obj/cnn-krnl.o",
+  "args": [
+   "-I",
+   ".",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../include",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/auto_cc/include",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/opt/Xilinx/Vitis/2021.1/bin/../common/technology/autopilot/opencl",
+   "-std=c++14",
+   "-D",
+   "FASTSIM",
+   "-I",
+   "/home/centos/CS133-lab4/lab4",
+   "-fPIC",
+   "-g",
+   "-c",
+   "-DHLS_STREAM_THREAD_SAFE",
+   "-MD",
+   "-MT",
+   "obj/cnn-krnl.o",
+   "-MP",
+   "-MF",
+   "obj/cnn-krnl.Cd",
+   "/home/centos/CS133-lab4/lab4/_x/link/int/xo/CnnKernel/CnnKernel/cpu_sources/cnn-krnl.cpp",
+   "-o",
+   "obj/cnn-krnl.o"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/CS133-lab4/lab4"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri May 27 19:38:55 2022",
+ "timestampMillis": "1653680335811",
+ "status": {
+  "cmdId": "d36f7681-f67f-435f-ac57-29f594fb0db7",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri May 27 19:38:57 2022",
+ "timestampMillis": "1653680337120",
+ "status": {
+  "cmdId": "d36f7681-f67f-435f-ac57-29f594fb0db7",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri May 27 19:38:57 2022",
+ "timestampMillis": "1653680337121",
+ "buildStep": {
+  "cmdId": "c8b1f39f-cbbc-494e-8060-5c958f648015",
+  "name": "ar",
+  "logFile": "/home/centos/CS133-lab4/lab4/_x/link/int/CnnKernel/CnnKernel_ar.log",
+  "commandLine": "/opt/Xilinx/Vivado/2021.1/tps/lnx64/binutils-2.26/bin/ar -cr /home/centos/CS133-lab4/lab4/_x/link/int/CnnKernel/CnnKernel.csim_cu.a /home/centos/CS133-lab4/lab4/_x/link/int/CnnKernel/obj/cnn-krnl.o",
+  "args": [
+   "-cr",
+   "/home/centos/CS133-lab4/lab4/_x/link/int/CnnKernel/CnnKernel.csim_cu.a",
+   "/home/centos/CS133-lab4/lab4/_x/link/int/CnnKernel/obj/cnn-krnl.o"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/CS133-lab4/lab4"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri May 27 19:38:57 2022",
+ "timestampMillis": "1653680337121",
+ "status": {
+  "cmdId": "c8b1f39f-cbbc-494e-8060-5c958f648015",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri May 27 19:38:57 2022",
+ "timestampMillis": "1653680337126",
+ "status": {
+  "cmdId": "c8b1f39f-cbbc-494e-8060-5c958f648015",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri May 27 19:38:57 2022",
+ "timestampMillis": "1653680337127",
+ "buildStep": {
+  "cmdId": "ef6688dd-ebcb-408a-9be7-2375f18c32b5",
+  "name": "g++",
+  "logFile": "/home/centos/CS133-lab4/lab4/_x/link/int/cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3_xcl_top_gpp.log",
+  "commandLine": "/opt/Xilinx/Vivado/2021.1/tps/lnx64/gcc-6.2.0/bin/g++ -I . -I /opt/Xilinx/Vitis_HLS/2021.1/bin/../include -I /opt/Xilinx/Vitis_HLS/2021.1/bin/../common/technology/autopilot/opencl -I /opt/Xilinx/Vitis/2021.1/bin/../common/technology/autopilot/opencl -I /opt/Xilinx/Vitis/2021.1/bin/../data/emulation/include -I /opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/auto_cc/include -fPIC -g -DHLS_STREAM_THREAD_SAFE -std=c++14 -fpermissive -c -MD -MT obj/xcl_top.o -MP -MF obj/xcl_top.CXXd xcl_top.cpp -o obj/xcl_top.o",
+  "args": [
+   "-I",
+   ".",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../include",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/opt/Xilinx/Vitis/2021.1/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/opt/Xilinx/Vitis/2021.1/bin/../data/emulation/include",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/auto_cc/include",
+   "-fPIC",
+   "-g",
+   "-DHLS_STREAM_THREAD_SAFE",
+   "-std=c++14",
+   "-fpermissive",
+   "-c",
+   "-MD",
+   "-MT",
+   "obj/xcl_top.o",
+   "-MP",
+   "-MF",
+   "obj/xcl_top.CXXd",
+   "xcl_top.cpp",
+   "-o",
+   "obj/xcl_top.o"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/CS133-lab4/lab4"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri May 27 19:38:57 2022",
+ "timestampMillis": "1653680337127",
+ "status": {
+  "cmdId": "ef6688dd-ebcb-408a-9be7-2375f18c32b5",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri May 27 19:38:58 2022",
+ "timestampMillis": "1653680338311",
+ "status": {
+  "cmdId": "ef6688dd-ebcb-408a-9be7-2375f18c32b5",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri May 27 19:38:58 2022",
+ "timestampMillis": "1653680338312",
+ "buildStep": {
+  "cmdId": "81b658ea-1023-4102-b434-55c5dc2e18d3",
+  "name": "g++",
+  "logFile": "/home/centos/CS133-lab4/lab4/_x/link/int/cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3_top_gpp.log",
+  "commandLine": "/opt/Xilinx/Vivado/2021.1/tps/lnx64/gcc-6.2.0/bin/g++ -fPIC -DHLS_STREAM_THREAD_SAFE -std=c++14 -Wall -shared -Wl,--whole-archive,-soname,cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3.so -o cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3.so CnnKernel/CnnKernel.csim_cu.a obj/xcl_top.o -Wl,--no-whole-archive -Wl,--as-needed -L /opt/Xilinx/Vitis_HLS/2021.1/bin/../lib/lnx64.o -lhlsmathsim -L /opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/fpo_v7_0 -lgmp -lmpfr -lIp_floating_point_v7_0_bitacc_cmodel -Wl,-rpath,/opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/fpo_v7_0 -L /opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/fft_v9_1 -lIp_xfft_v9_1_bitacc_cmodel -L /opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/fir_v7_0 -lgmp -lIp_fir_compiler_v7_2_bitacc_cmodel -L /opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/lib/csim -lhlsmc++-GCC46 -L /opt/Xilinx/Vivado/2021.1/tps/lnx64/gcc-6.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/ -lgcov",
+  "args": [
+   "-fPIC",
+   "-DHLS_STREAM_THREAD_SAFE",
+   "-std=c++14",
+   "-Wall",
+   "-shared",
+   "-Wl,--whole-archive,-soname,cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3.so",
+   "-o",
+   "cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3.so",
+   "CnnKernel/CnnKernel.csim_cu.a",
+   "obj/xcl_top.o",
+   "-Wl,--no-whole-archive",
+   "-Wl,--as-needed",
+   "-L",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../lib/lnx64.o",
+   "-lhlsmathsim",
+   "-L",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/fpo_v7_0",
+   "-lgmp",
+   "-lmpfr",
+   "-lIp_floating_point_v7_0_bitacc_cmodel",
+   "-Wl,-rpath,/opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/fpo_v7_0",
+   "-L",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/fft_v9_1",
+   "-lIp_xfft_v9_1_bitacc_cmodel",
+   "-L",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/fir_v7_0",
+   "-lgmp",
+   "-lIp_fir_compiler_v7_2_bitacc_cmodel",
+   "-L",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/lib/csim",
+   "-lhlsmc++-GCC46",
+   "-L",
+   "/opt/Xilinx/Vivado/2021.1/tps/lnx64/gcc-6.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/",
+   "-lgcov"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/CS133-lab4/lab4"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri May 27 19:38:58 2022",
+ "timestampMillis": "1653680338312",
+ "status": {
+  "cmdId": "81b658ea-1023-4102-b434-55c5dc2e18d3",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri May 27 19:38:58 2022",
+ "timestampMillis": "1653680338387",
+ "status": {
+  "cmdId": "81b658ea-1023-4102-b434-55c5dc2e18d3",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri May 27 19:38:58 2022",
+ "timestampMillis": "1653680338535",
+ "report": {
+  "path": "/home/centos/CS133-lab4/lab4/_x/link/int/cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3_xml.rtd",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "XCLBIN_INFO",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri May 27 19:38:58 2022",
+ "timestampMillis": "1653680338537",
+ "buildStep": {
+  "cmdId": "e9bdaebc-a9f5-4537-8ca4-091481a06e73",
+  "name": "xclbinutil",
+  "logFile": "/home/centos/CS133-lab4/lab4/_x/link/int/cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3_xclbinutil.log",
+  "commandLine": "/opt/Xilinx/Vitis/2021.1/bin/xclbinutil --add-section BITSTREAM:RAW:/home/centos/CS133-lab4/lab4/_x/link/int/cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3.so --force --target sw_emu --add-section :JSON:/home/centos/CS133-lab4/lab4/_x/link/int/cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3.rtd --append-section :JSON:/home/centos/CS133-lab4/lab4/_x/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/centos/CS133-lab4/lab4/_x/link/int/cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3_xml.rtd --add-section BUILD_METADATA:JSON:/home/centos/CS133-lab4/lab4/_x/link/int/cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/centos/CS133-lab4/lab4/_x/link/int/cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xml --output /home/centos/CS133-lab4/lab4/cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xclbin",
+  "args": [
+   "--add-section",
+   "BITSTREAM:RAW:/home/centos/CS133-lab4/lab4/_x/link/int/cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3.so",
+   "--force",
+   "--target",
+   "sw_emu",
+   "--add-section",
+   ":JSON:/home/centos/CS133-lab4/lab4/_x/link/int/cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3.rtd",
+   "--append-section",
+   ":JSON:/home/centos/CS133-lab4/lab4/_x/link/int/appendSection.rtd",
+   "--add-section",
+   "CLOCK_FREQ_TOPOLOGY:JSON:/home/centos/CS133-lab4/lab4/_x/link/int/cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3_xml.rtd",
+   "--add-section",
+   "BUILD_METADATA:JSON:/home/centos/CS133-lab4/lab4/_x/link/int/cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3_build.rtd",
+   "--add-section",
+   "EMBEDDED_METADATA:RAW:/home/centos/CS133-lab4/lab4/_x/link/int/cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xml",
+   "--output",
+   "/home/centos/CS133-lab4/lab4/cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/CS133-lab4/lab4"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri May 27 19:38:58 2022",
+ "timestampMillis": "1653680338537",
+ "status": {
+  "cmdId": "e9bdaebc-a9f5-4537-8ca4-091481a06e73",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri May 27 19:38:58 2022",
+ "timestampMillis": "1653680338607",
+ "status": {
+  "cmdId": "e9bdaebc-a9f5-4537-8ca4-091481a06e73",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri May 27 19:38:58 2022",
+ "timestampMillis": "1653680338608",
+ "buildStep": {
+  "cmdId": "e3385c6b-6f3f-4cf1-a342-3ea5177eabcb",
+  "name": "xclbinutil",
+  "logFile": "/home/centos/CS133-lab4/lab4/cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xclbin.info",
+  "commandLine": "/opt/Xilinx/Vitis/2021.1/bin/xclbinutil --quiet --info --input /home/centos/CS133-lab4/lab4/cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xclbin",
+  "args": [
+   "--quiet",
+   "--info",
+   "--input",
+   "/home/centos/CS133-lab4/lab4/cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/CS133-lab4/lab4"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri May 27 19:38:58 2022",
+ "timestampMillis": "1653680338608",
+ "status": {
+  "cmdId": "e3385c6b-6f3f-4cf1-a342-3ea5177eabcb",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri May 27 19:38:58 2022",
+ "timestampMillis": "1653680338676",
+ "status": {
+  "cmdId": "e3385c6b-6f3f-4cf1-a342-3ea5177eabcb",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri May 27 19:38:58 2022",
+ "timestampMillis": "1653680338731",
+ "report": {
+  "path": "/home/centos/CS133-lab4/lab4/_x/reports/link/v++_link_cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri May 27 19:38:58 2022",
+ "timestampMillis": "1653680338732",
+ "report": {
+  "path": "/home/centos/CS133-lab4/lab4/_x/v++_link_cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3_guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri May 27 19:38:58 2022",
+ "timestampMillis": "1653680338733",
+ "report": {
+  "path": "/home/centos/CS133-lab4/lab4/_x/logs/optraceViewer.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "OPERATION_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri May 27 19:38:58 2022",
+ "timestampMillis": "1653680338733",
+ "status": {
+  "cmdId": "de4c1dc0-308d-4e74-b952-261dbf0ce816",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

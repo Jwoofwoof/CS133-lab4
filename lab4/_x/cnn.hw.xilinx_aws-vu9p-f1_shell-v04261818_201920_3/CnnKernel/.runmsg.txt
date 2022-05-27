@@ -1,0 +1,2 @@
+performing high-level synthesis for kernel: CnnKernel
+Log file: /home/centos/CS133-lab4/lab4/_x/cnn.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_3/CnnKernel/vitis_hls.log

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="CnnKernel" xd:componentRef="CnnKernel" xd:initiationInterval="x" xd:clockPeriod="4" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="*(input)" xd:originalName="input" xd:direction="inout" xd:interfaceRef="m_axi_gmem" xd:busTypeRef="aximm" xd:dataWidth="512" xd:bufferDirection="inout"/>
+  <xd:arg xd:name="input" xd:originalName="input" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x10" xd:dataWidth="32" xd:aximmInterfaceRef="m_axi_gmem"/>
+  <xd:arg xd:name="*(weight)" xd:originalName="weight" xd:direction="inout" xd:interfaceRef="m_axi_gmem" xd:busTypeRef="aximm" xd:dataWidth="512" xd:bufferDirection="inout"/>
+  <xd:arg xd:name="weight" xd:originalName="weight" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x1C" xd:dataWidth="32" xd:aximmInterfaceRef="m_axi_gmem"/>
+  <xd:arg xd:name="*(bias)" xd:originalName="bias" xd:direction="inout" xd:interfaceRef="m_axi_gmem" xd:busTypeRef="aximm" xd:dataWidth="512" xd:bufferDirection="inout"/>
+  <xd:arg xd:name="bias" xd:originalName="bias" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x28" xd:dataWidth="32" xd:aximmInterfaceRef="m_axi_gmem"/>
+  <xd:arg xd:name="*(output)" xd:originalName="output" xd:direction="inout" xd:interfaceRef="m_axi_gmem" xd:busTypeRef="aximm" xd:dataWidth="512" xd:bufferDirection="inout"/>
+  <xd:arg xd:name="output" xd:originalName="output" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x34" xd:dataWidth="32" xd:aximmInterfaceRef="m_axi_gmem"/>
+  <xd:latencyEstimates xd:best-case="3338516585" xd:worst-case="3379972201" xd:average-case="3359303785"/>
+  <xd:resourceEstimates xd:LUT="44095" xd:FF="24454" xd:BRAM="0" xd:DSP="48"/>
+</xd:acceleratorMap>

@@ -1,0 +1,3 @@
+
+Ö
+Gv++_compile_cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3$d692f672-9234-4863-a851-c6d8749fcafaªv++  -t sw_emu --platform /home/centos/src/project_data/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_3/xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xpfm --save-temps -c -k CnnKernel -I. -DFASTSIM -ocnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xo cnn-krnl.cpp *¾"¹/home/centos/CS133-lab4/lab4/_x/reports/cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3/v++_compile_cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3_guidance.html2w"s/home/centos/CS133-lab4/lab4/_x/v++_compile_cnn_fast.sw_emu.xilinx_aws-vu9p-f1_shell-v04261818_201920_3_guidance.pb

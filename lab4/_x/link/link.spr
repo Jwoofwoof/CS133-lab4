@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="link" dir="">
+  <FileSets>
+    <FileSet Name="kernel_CnnKernel" Type="DesignSrcs">
+      <File Path="/home/centos/CS133-lab4/lab4/_x/link/int/xo/CnnKernel/CnnKernel/cpu_sources/cnn-krnl.cpp"/>
+      <Config/>
+    </FileSet>
+  </FileSets>
+  <Runs/>
+</project>

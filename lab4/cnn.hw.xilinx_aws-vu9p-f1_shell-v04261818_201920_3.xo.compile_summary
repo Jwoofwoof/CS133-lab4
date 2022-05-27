@@ -1,0 +1,236 @@
+<ENTRY>
+{
+ "thisFile": "/home/centos/CS133-lab4/lab4/cnn.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Fri May 27 19:39:53 2022",
+ "timestampMillis": "1653680393300",
+ "buildStep": {
+  "cmdId": "3b2c2037-5162-4ea0-8064-6823de1c223e",
+  "name": "v++",
+  "logFile": "/home/centos/CS133-lab4/lab4/_x/cnn.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_3/cnn.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_3.steps.log",
+  "commandLine": "/opt/Xilinx/Vitis/2021.1/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -t hw --platform /home/centos/src/project_data/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_3/xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xpfm --save-temps -c -k CnnKernel -I. -ocnn.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xo cnn-krnl.cpp ",
+  "args": [
+   "-t",
+   "hw",
+   "--platform",
+   "/home/centos/src/project_data/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_3/xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xpfm",
+   "--save-temps",
+   "-c",
+   "-k",
+   "CnnKernel",
+   "-I.",
+   "-ocnn.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xo",
+   "cnn-krnl.cpp"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/CS133-lab4/lab4"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri May 27 19:39:53 2022",
+ "timestampMillis": "1653680393300",
+ "status": {
+  "cmdId": "3b2c2037-5162-4ea0-8064-6823de1c223e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Fri May 27 19:39:59 2022",
+ "timestampMillis": "1653680399810",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xpfm",
+  "hardwareDsa": "xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xsa",
+  "platformDirectory": "/home/centos/src/project_data/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_3",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "CnnKernel",
+     "file": "/home/centos/CS133-lab4/lab4/cnn.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/centos/CS133-lab4/lab4/cnn-krnl.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2021.1. SW Build 3246112 on 2021-06-09-14:19:56"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri May 27 19:39:59 2022",
+ "timestampMillis": "1653680399814",
+ "buildStep": {
+  "cmdId": "193f4703-be0c-40bc-b08c-6251e9eafa4b",
+  "name": "vitis_hls",
+  "logFile": "/home/centos/CS133-lab4/lab4/_x/cnn.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_3/CnnKernel/vitis_hls.log",
+  "commandLine": "vitis_hls -f /home/centos/CS133-lab4/lab4/_x/cnn.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_3/CnnKernel/CnnKernel.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "vitis_hls",
+   "-f",
+   "/home/centos/CS133-lab4/lab4/_x/cnn.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_3/CnnKernel/CnnKernel.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/CS133-lab4/lab4"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri May 27 19:39:59 2022",
+ "timestampMillis": "1653680399814",
+ "status": {
+  "cmdId": "193f4703-be0c-40bc-b08c-6251e9eafa4b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri May 27 19:41:27 2022",
+ "timestampMillis": "1653680487361",
+ "status": {
+  "cmdId": "193f4703-be0c-40bc-b08c-6251e9eafa4b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri May 27 19:41:27 2022",
+ "timestampMillis": "1653680487377",
+ "report": {
+  "path": "/home/centos/CS133-lab4/lab4/_x/cnn.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_3/CnnKernel/CnnKernel/solution/.autopilot/db/CnnKernel.design.xml",
+  "name": "CnnKernel",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_REPORT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri May 27 19:41:27 2022",
+ "timestampMillis": "1653680487378",
+ "report": {
+  "path": "/home/centos/CS133-lab4/lab4/_x/cnn.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_3/CnnKernel/CnnKernel/solution/.autopilot/db/.message_syn.xml",
+  "name": "CnnKernel",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_DRC_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri May 27 19:41:27 2022",
+ "timestampMillis": "1653680487378",
+ "report": {
+  "path": "/home/centos/CS133-lab4/lab4/_x/reports/cnn.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_3/hls_reports/CnnKernel_csynth.rpt",
+  "name": "CnnKernel",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri May 27 19:41:27 2022",
+ "timestampMillis": "1653680487378",
+ "report": {
+  "path": "/home/centos/CS133-lab4/lab4/_x/cnn.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_3/CnnKernel/CnnKernel/solution/syn/report/CnnKernel_csynth.xml",
+  "name": "CnnKernel",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri May 27 19:41:27 2022",
+ "timestampMillis": "1653680487387",
+ "report": {
+  "path": "/home/centos/CS133-lab4/lab4/_x/reports/cnn.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_3/system_estimate_cnn.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri May 27 19:41:27 2022",
+ "timestampMillis": "1653680487956",
+ "report": {
+  "path": "/home/centos/CS133-lab4/lab4/_x/reports/cnn.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_3/v++_compile_cnn.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_3_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri May 27 19:41:27 2022",
+ "timestampMillis": "1653680487957",
+ "report": {
+  "path": "/home/centos/CS133-lab4/lab4/_x/v++_compile_cnn.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_3_guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri May 27 19:41:27 2022",
+ "timestampMillis": "1653680487957",
+ "status": {
+  "cmdId": "3b2c2037-5162-4ea0-8064-6823de1c223e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

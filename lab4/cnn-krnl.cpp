@@ -11,9 +11,14 @@ void CnnKernel_YourCode(
     const bias_g_t  *bias_g,        output_g_t *output_g) {
 
   static input_t   input [kNum][kTileH+kKernel-1][kTileW+kKernel-1];
+ #pragma HLS array_partition variable=input dim=2 cyclic
+ #pragma HLS array_partition variable=input dim=3 cyclic
   static weight_t  weight[kNum][kNum][kKernel][kKernel];
+ #pragma HLS array_partition variable=weight dim=3 complete
+ #pragma HLS array_partition variable=weight dim=4 complete
   static bias_t    bias  [kNum];
   static output_t  output[kNum][kTileH/2][kTileW/2];
+ #pragma HLS array_partition variable=output dim=3 cyclic
 
   static compute_t C[kTileH][kTileW];
 
@@ -53,8 +58,11 @@ void CnnKernel_YourCode(
         for (int j = 0; j < kNum; ++j) {
           for (int h = 0; h < kTileH; ++h) {
             for (int w = 0; w < kTileW; ++w) {
+	#pragma HLS pipeline II=1
               for (int p = 0; p < kKernel; ++p) {
+	#pragma HLS unroll
                 for (int q = 0; q < kKernel; ++q)
+	#pragma HLS unroll
                   C[h][w] += weight[i][j][p][q] *
                              input[j][h + p][w + q];
               }

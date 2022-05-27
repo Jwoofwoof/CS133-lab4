@@ -1,0 +1,121 @@
+
+
+================================================================
+== Synthesis Summary Report of 'CnnKernel'
+================================================================
++ General Information: 
+    * Date:           Fri May 27 19:41:09 2022
+    * Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:07 MDT 2021)
+    * Project:        CnnKernel
+    * Solution:       solution (Vitis Kernel Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcvu9p-flgb2104-2-i
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +---------------------------------------------------------------------------------+--------+-------+------------+-----------+------------+------------+---------+----------+----------+----------+-------------+-------------+-----+
+    |                                     Modules                                     |  Issue |       |  Latency   |  Latency  |  Iteration |            |   Trip  |          |          |          |             |             |     |
+    |                                     & Loops                                     |  Type  | Slack |  (cycles)  |    (ns)   |   Latency  |  Interval  |  Count  | Pipelined|   BRAM   |    DSP   |      FF     |     LUT     | URAM|
+    +---------------------------------------------------------------------------------+--------+-------+------------+-----------+------------+------------+---------+----------+----------+----------+-------------+-------------+-----+
+    |+ CnnKernel                                                                      |  Timing|  -0.00|  3379972201|  1.352e+10|           -|  3379972202|        -|        no|  250 (5%)|  48 (~0%)|   24454 (1%)|   44095 (3%)|    -|
+    | + grp_CnnKernel_YourCode_fu_176                                                 |  Timing|  -0.00|  3379972199|  1.352e+10|           -|  3379972199|        -|        no|  220 (5%)|  48 (~0%)|  22523 (~0%)|   41882 (3%)|    -|
+    |  + grp_CnnKernel_YourCode_Pipeline_VITIS_LOOP_125_1_fu_599                      |       -|   0.36|          89|    356.000|           -|          89|        -|        no|         -|   4 (~0%)|   2343 (~0%)|   3944 (~0%)|    -|
+    |   o VITIS_LOOP_125_1                                                            |       -|   2.92|          87|    348.000|          25|           1|       64|       yes|         -|         -|            -|            -|    -|
+    |  + grp_CnnKernel_YourCode_Pipeline_VITIS_LOOP_183_3_fu_655                      |       -|   0.51|         136|    544.000|           -|         136|        -|        no|         -|         -|   4951 (~0%)|   6006 (~0%)|    -|
+    |   o VITIS_LOOP_183_3                                                            |       -|   2.92|         134|    536.000|          72|           1|       64|       yes|         -|         -|            -|            -|    -|
+    |  + grp_CnnKernel_YourCode_Pipeline_set_bias_VITIS_LOOP_52_1_fu_720              |       -|   0.92|       12546|  5.018e+04|           -|       12546|        -|        no|         -|         -|     45 (~0%)|    191 (~0%)|    -|
+    |   o set_bias_VITIS_LOOP_52_1                                                    |       -|   2.92|       12544|  5.018e+04|           2|           1|    12544|       yes|         -|         -|            -|            -|    -|
+    |  + grp_CnnKernel_YourCode_Pipeline_conv_VITIS_LOOP_59_2_VITIS_LOOP_60_3_fu_726  |       -|   0.04|     3211304|  1.285e+07|           -|     3211304|        -|        no|         -|  35 (~0%)|   8270 (~0%)|   13544 (1%)|    -|
+    |   o conv_VITIS_LOOP_59_2_VITIS_LOOP_60_3                                        |       -|   2.92|     3211302|  1.285e+07|          40|           1|  3211264|       yes|         -|         -|            -|            -|    -|
+    |  + grp_CnnKernel_YourCode_Pipeline_relu_VITIS_LOOP_76_6_fu_833                  |       -|   0.42|       12547|  5.019e+04|           -|       12547|        -|        no|         -|         -|     61 (~0%)|    191 (~0%)|    -|
+    |   o relu_VITIS_LOOP_76_6                                                        |       -|   2.92|       12545|  5.018e+04|           3|           1|    12544|       yes|         -|         -|            -|            -|    -|
+    |  + grp_CnnKernel_YourCode_Pipeline_maxpool_VITIS_LOOP_84_7_fu_839               |       -|   0.03|        6276|  2.510e+04|           -|        6276|        -|        no|         -|         -|    133 (~0%)|    477 (~0%)|    -|
+    |   o maxpool_VITIS_LOOP_84_7                                                     |      II|   2.92|        6274|  2.510e+04|           5|           2|     3136|       yes|         -|         -|            -|            -|    -|
+    |  + grp_CnnKernel_YourCode_Pipeline_VITIS_LOOP_220_3_fu_848                      |       -|   0.16|         103|    412.000|           -|         103|        -|        no|         -|         -|   3100 (~0%)|  11598 (~0%)|    -|
+    |   o VITIS_LOOP_220_3                                                            |       -|   2.92|         101|    404.000|          39|           1|       64|       yes|         -|         -|            -|            -|    -|
+    |  o read_weight                                                                  |       -|   2.92|     2380800|  9.523e+06|          93|           -|    25600|        no|         -|         -|            -|            -|    -|
+    |  o main_loop_tile_h                                                             |       -|   2.92|  3377591328|  1.351e+10|  1688795664|           -|        2|        no|         -|         -|            -|            -|    -|
+    |   o main_loop_tile_w                                                            |       -|   2.92|  1688795662|  6.755e+09|   844397831|           -|        2|        no|         -|         -|            -|            -|    -|
+    |    o read_input_VITIS_LOOP_164_1                                                |       -|   2.92|    10601472|  4.241e+07|         357|           -|    29696|        no|         -|         -|            -|            -|    -|
+    |     o VITIS_LOOP_171_2                                                          |       -|   2.92|         280|  1.120e+03|         140|           -|        2|        no|         -|         -|            -|            -|    -|
+    |    o main_loop_i                                                                |       -|   2.92|   830126336|  3.321e+09|     3242681|           -|      256|        no|         -|         -|            -|            -|    -|
+    |    o write_output_VITIS_LOOP_204_1                                              |       -|   2.92|     3670019|  1.468e+07|         256|           -|    14336|        no|         -|         -|            -|            -|    -|
+    |     o VITIS_LOOP_211_2                                                          |       -|   2.92|         246|    984.000|         246|           -|        1|        no|         -|         -|            -|            -|    -|
+    +---------------------------------------------------------------------------------+--------+-------+------------+-----------+------------+------------+---------+----------+----------+----------+-------------+-------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| Interface  | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   |
+|            | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |
++------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| m_axi_gmem | 512 -> 512 | 64            | 64      | slave  | 0        | 512       | 16           | 16           | 16          | 16          |
++------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+
+* S_AXILITE
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 6             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* TOP LEVEL CONTROL
++-----------+---------------+-----------+
+| Interface | Type          | Ports     |
++-----------+---------------+-----------+
+| ap_clk    | clock         | ap_clk    |
+| ap_rst_n  | reset         | ap_rst_n  |
+| interrupt | interrupt     | interrupt |
+| ap_ctrl   | ap_ctrl_chain |           |
++-----------+---------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------------------+
+| Argument | Direction | Datatype             |
++----------+-----------+----------------------+
+| input    | inout     | ap_uint<512> const * |
+| weight   | inout     | ap_uint<512> const * |
+| bias     | inout     | ap_uint<512> const * |
+| output   | inout     | ap_uint<512>*        |
++----------+-----------+----------------------+
+
+* SW-to-HW Mapping
++----------+--------------------------+-----------+----------+-----------------------+
+| Argument | HW Name                  | HW Type   | HW Usage | HW Info               |
++----------+--------------------------+-----------+----------+-----------------------+
+| input    | m_axi_gmem               | interface |          |                       |
+| input    | s_axi_control input_r_1  | register  | offset   | offset=0x10, range=32 |
+| input    | s_axi_control input_r_2  | register  | offset   | offset=0x14, range=32 |
+| weight   | m_axi_gmem               | interface |          |                       |
+| weight   | s_axi_control weight_1   | register  | offset   | offset=0x1c, range=32 |
+| weight   | s_axi_control weight_2   | register  | offset   | offset=0x20, range=32 |
+| bias     | m_axi_gmem               | interface |          |                       |
+| bias     | s_axi_control bias_1     | register  | offset   | offset=0x28, range=32 |
+| bias     | s_axi_control bias_2     | register  | offset   | offset=0x2c, range=32 |
+| output   | m_axi_gmem               | interface |          |                       |
+| output   | s_axi_control output_r_1 | register  | offset   | offset=0x34, range=32 |
+| output   | s_axi_control output_r_2 | register  | offset   | offset=0x38, range=32 |
++----------+--------------------------+-----------+----------+-----------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+* Burst Summary
++--------------+------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
+| HW Interface | Loop             | Message                                                                                                                                                                                                                        | Location                                           |
++--------------+------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
+| m_axi_gmem   | read_weight      | Multiple burst reads of length 25600 and bit width 512. These bursts requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.    | /home/centos/CS133-lab4/lab4/lib/cnn-krnl.h:122:3  |
+| m_axi_gmem   | VITIS_LOOP_171_2 | Multiple burst reads of variable length and bit width 512. These bursts requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. | /home/centos/CS133-lab4/lab4/lib/cnn-krnl.h:171:25 |
++--------------+------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
+
+

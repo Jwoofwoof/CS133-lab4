@@ -1,0 +1,20 @@
+Fri May 27 19:39:44 2022: Running xcd server. This server was built by gradle.
+Fri May 27 19:39:44 2022: Server was asked to start on port: '39777'
+Fri May 27 19:39:44 2022: Server is using token UUID: '667bbf4a-e71b-4d66-9a55-f2f7400dcb3d'
+Fri May 27 19:39:44 2022: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Fri May 27 19:39:44 2022: Attempting to start server on port '39777'
+Fri May 27 19:39:44 2022: XCD main fifo: created main fifo '/tmp/xcdmain667bbf4a-e71b-4d66-9a55-f2f7400dcb3d', fd read = 13
+Fri May 27 19:39:44 2022: Running Dispatch Server
+Fri May 27 19:39:44 2022: Version 2.2.0
+Fri May 27 19:39:53 2022: Dispatch Server: Accepted socket connection from client
+Fri May 27 19:39:53 2022: Starting Socket connection
+Fri May 27 19:39:53 2022: EXCHANGE_TOKEN received, server token: 667bbf4a-e71b-4d66-9a55-f2f7400dcb3d, passed token: 667bbf4a-e71b-4d66-9a55-f2f7400dcb3d
+Fri May 27 19:39:54 2022: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Fri May 27 19:39:54 2022: SESSION_MGR: creating session with session uuid: '75a2dfa9-b7b7-4ae4-a52b-90264b82153c' and name 'v++_compile_cnn.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_3'
+Fri May 27 19:39:54 2022: KERNEL_SVC: creating session with uuid: '75a2dfa9-b7b7-4ae4-a52b-90264b82153c' and name 'v++_compile_cnn.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_3'
+Fri May 27 19:39:54 2022: GUIDANCE_SMGR: creating guidance session with uuid: '75a2dfa9-b7b7-4ae4-a52b-90264b82153c' and name 'v++_compile_cnn.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_3'
+Fri May 27 19:39:54 2022: SYSTEM_DIAGRAM_SMGR: creating diagram session with uuid: '75a2dfa9-b7b7-4ae4-a52b-90264b82153c' and name 'v++_compile_cnn.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_3'
+Fri May 27 19:41:27 2022: SESSION_MGR: closing session for UUID '75a2dfa9-b7b7-4ae4-a52b-90264b82153c' with name 'v++_compile_cnn.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_3'
+Fri May 27 19:41:27 2022: KERNEL_SVC: closing session for UUID '75a2dfa9-b7b7-4ae4-a52b-90264b82153c' with name 'v++_compile_cnn.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_3'
+Fri May 27 19:41:27 2022: GUIDANCE_SMGR: closing session for UUID '75a2dfa9-b7b7-4ae4-a52b-90264b82153c' with name 'v++_compile_cnn.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_3'
+Fri May 27 19:41:27 2022: SYSTEM_DIAGRAM_SMGR: closing session for UUID '75a2dfa9-b7b7-4ae4-a52b-90264b82153c' with name 'v++_compile_cnn.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_3'
